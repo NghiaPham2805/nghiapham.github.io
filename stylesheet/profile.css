@@ -1,0 +1,111 @@
+:root{
+    font-size: 17px;
+  }
+  
+  body{
+    color:black;
+    background-color: #FFFDF5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main{
+    display: flex;
+  }
+  
+  .profile{
+    margin-left: 13rem;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .profile-info{
+    display: flex;
+    gap: 30px;
+  }
+  .profile-info img{
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    border: 3px solid #B8938B;
+  }
+  .profile-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .profile-name{
+    display: flex;
+    font-size: 1.8rem;
+    align-items: center;
+    gap: 20px;
+  }
+  .profile-follow{
+    display: flex;
+    gap: 15px;
+  }
+  
+  .navbar{
+    width: 12rem;
+    height: 100vh;
+    position: fixed;
+    background-color: #FFFDF5;
+    border-right: 2px solid #B8938B;
+  }
+  
+  .nav-list{
+    list-style: none;
+    padding: 0 1.2rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nav-item{
+    width: 100%;
+  }
+  
+  .nav-link:hover{
+    color: #B6845C;
+  }
+  
+  .nav-link:active{
+    color: #E2AD83;
+  }
+  
+  .nav-link{
+    display: flex;
+    gap:12px;
+    align-items: center;
+    text-decoration: none;
+    height: 4rem;
+    color: #7F4B23;
+  }
+  
+  @media only screen and (max-width: 600px){
+    .profile{
+      margin: 0.5rem 0.5rem;
+    }
+  
+    .navbar{
+      bottom: 0;
+      width: 100vw;
+      height: 4rem;
+      border-top: 2px solid #B8938B;
+    }
+  
+    .nav-list{
+      flex-direction: row;
+    }
+  
+    .nav-link{
+      justify-content: center;
+    }
+  
+    .nav-link p{
+      display: none;
+    }
+  }
+  
+  
