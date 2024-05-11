@@ -1,8 +1,8 @@
-*,
+/* *,
 *::after,
 *::before {
   box-sizing: border-box;
-}
+} */
 
 :root {
   font-size: 17px;
@@ -45,6 +45,7 @@ body {
   border-top-left-radius: 18px;
   width: 15rem;
   height: 35px;
+  box-sizing: border-box;
 }
 
 .search button {
@@ -182,7 +183,7 @@ select {
 .admin{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     padding: 20px 30px 20px 30px;
     width: 45rem;
     max-width: 90%;
@@ -221,8 +222,26 @@ select {
   background-color: #b8938b;
   color: white;
 }
-.btn{
+.btn {
   display: flex;
-  flex-wrap: wrap;
-  
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  /* width: 8rem; */
+  border-radius: 15px;
+  border: none;
+  color: white;
+  flex-direction: row;
+  gap: 2rem;
+}
+.deleteBtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  width: 8rem;
+  border-radius: 15px;
+  border: none;
+  background-color:#ff4545;
+  color: white;
 }
