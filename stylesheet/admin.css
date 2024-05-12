@@ -34,6 +34,7 @@ body {
 .top {
   display: flex;
   gap: 10px;
+  flex-wrap:wrap;
 }
 .search {
   display: flex;
@@ -139,7 +140,7 @@ select {
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 970px) {
   .search-bar {
     margin: 0.5rem 0.5rem;
   }
@@ -244,4 +245,35 @@ select {
   border: none;
   background-color:#ff4545;
   color: white;
+}
+.inside{  
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 600px) {
+    .btn{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 2rem;
+      /* width: 8rem; */
+      border-radius: 15px;
+      border: none;
+      color: white;
+      flex-direction: row;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .admin{
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 15px 10px 15px 10px;
+      width: 45rem;
+      max-width: 90%;
+      background-color: rgba(255, 255, 255, 0.614);
+      border: 1px solid #b8938b;
+      border-radius: 15px;
+  }
 }
