@@ -36,7 +36,7 @@ body {
   gap: 10px;
   flex-wrap:wrap;
 }
-.hehe{
+.upBar{
   display: flex;
   gap: 0.5rem;
   align-items: center;
@@ -292,15 +292,14 @@ select {
     .nav-link p {
       display: none;
     }
+    .top{
+      justify-content: center;
+    }
+  }
+  @media only screen and (max-width: 800px) {
     .admin{
       display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      padding: 15px 10px 15px 10px;
-      width: 45rem;
-      max-width: 90%;
-      background-color: rgba(255, 255, 255, 0.614);
-      border: 1px solid #b8938b;
-      border-radius: 15px;
+      flex-direction: column;
+      gap: 1rem;
+    }
   }
-}
