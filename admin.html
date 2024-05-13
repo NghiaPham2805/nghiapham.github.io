@@ -18,14 +18,14 @@
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="fa-solid fa-people-group"></i>
-                        <p class="nav-text">User List</p>
+                        <p class="nav-text">Users List</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-                        <i class="fa-solid fa-gear"></i>
-                        <p class="nav-text">Manage Post</p>
+                        <i class="fa-solid fa-file"></i>
+                        <p class="nav-text">Manage Posts</p>
                     </a>
                 </li>
             </ul>
@@ -68,7 +68,7 @@
             
                     <div class="btn">
                         <button class="checkBtn">Check posts</button>
-                        <button class="deleteBtn">Delete account</button>
+                        <button class="deleteBtn" data-modal-target="#deleteModal">Delete account</button>
                     </div>
                 </div>
 
@@ -83,7 +83,7 @@
             
                     <div class="btn">
                         <button class="checkBtn">Check posts</button>
-                        <button class="deleteBtn">Delete account</button>
+                        <button class="deleteBtn" data-modal-target="#deleteModal">Delete account</button>
                     </div>
                 </div>
 
@@ -98,12 +98,32 @@
             
                     <div class="btn">
                         <button class="checkBtn">Check posts</button>
-                        <button class="deleteBtn">Delete account</button>
+                        <button class="deleteBtn" data-modal-target="#deleteModal">Delete account</button>
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
+    <div class="modal" id="deleteModal">
+        <div class="modal-header2">
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+    
+        <div class="modal-body2">
+            <div>
+                <div>Are you sure you want to delete this user account?</div>
+                <div>WARNING: This action is irreversible!!!</div>
+            </div>
+            <div>
+                <button class="delete">Delete account</button>
+                <button class="cancelBtn">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="overlay"></div>
+
+    <script src="javascript/admin.js"></script>
 </body>
 </html>
