@@ -3,6 +3,10 @@
 *::before {
   box-sizing: border-box;
 } */
+h1, h2, h3, h4, h5, h6, p, button{
+  font-family: 'Kreon', sans-serif;
+  color: var(--text-color);
+}
 
 :root {
   font-size: 17px;
@@ -137,6 +141,7 @@ select {
 .deleteBtn{
   background-color: #C91432;;
   color: white;
+  font-family: 'inter', sans-serif;
 }
 .deleteBtn:hover{
   background-color: rgb(246, 99, 99);
@@ -337,6 +342,7 @@ body.modal-open {
 }
 .bigText{
   display: flex;
+
 }
 .bigText h2{
   font-size: 2rem;
@@ -358,8 +364,9 @@ body.modal-open {
   flex-direction: column;
   width: 100%;
   align-items: center;
-  padding: 5rem 0rem;
+  padding: 2rem 0rem;
   gap: 3rem;
+  margin-bottom: 3rem;
 }
 .info{
   display: flex;
@@ -383,6 +390,7 @@ body.modal-open {
   border: none;
   background-color: var(--button-color);
   color: white;
+  font-family: 'inter', sans-serif;
 }
 .btn {
   display: flex;

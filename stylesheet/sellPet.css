@@ -178,7 +178,7 @@ body{
   
 }
 .dog img{
-  width:100%;
+  width:90%;
   height:auto;
   border: 5px solid var(--border-color);
   margin: 25px;
@@ -206,7 +206,7 @@ body{
   background-color:var(--button-color);
   color:white;
   width: 25%;
-  height: 50%;
+  height: 70%;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
